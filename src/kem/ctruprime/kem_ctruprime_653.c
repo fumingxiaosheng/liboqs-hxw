@@ -49,9 +49,9 @@ OQS_API OQS_STATUS OQS_KEM_ctruprime_653_keypair(uint8_t *public_key,uint8_t *se
 }
 
 OQS_API OQS_STATUS OQS_KEM_ctruprime_653_encaps(uint8_t *ciphertext,uint8_t *shared_secret,const uint8_t *public_key) {
-    return (OQS_STATUS) crypto_kem_encaps(unsigned char * (ciphertext),unsigned char *(shared_secret),unsigned char *(public_key));
+    return (OQS_STATUS) crypto_kem_encaps(ciphertext,shared_secret,public_key);
 }
 
 OQS_API OQS_STATUS OQS_KEM_ctruprime_653_decaps(uint8_t *shared_secret,const uint8_t *ciphertext,const uint8_t *secret_key) {
-    return (OQS_STATUS) crypto_kem_decaps(unsigned char * (shared_secret) , unsigned char *(ciphertext) ,unsigned char * (secret_key));
+    return (OQS_STATUS) crypto_kem_decaps(shared_secret ,ciphertext ,secret_key);
 }
