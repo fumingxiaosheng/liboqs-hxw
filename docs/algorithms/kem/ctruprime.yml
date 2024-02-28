@@ -13,5 +13,5 @@ parameter-sets:
   length-public-key: 994
   length-ciphertext: 898
   length-secret-key: 1353
-  length-shared-secret: 33
+  length-shared-secret: 32
   implementations-switch-on-runtime-cpu-features: true

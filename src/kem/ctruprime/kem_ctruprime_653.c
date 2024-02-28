@@ -18,22 +18,22 @@ OQS_KEM *OQS_KEM_ctruprime_653_new(void) {
     kem->claimed_nist_level = 1;//TODO:修改NIST等级
     kem->ind_cca = true;
 
-    printf("1\n");
+    //printf("1\n");
 
     kem->length_public_key = OQS_KEM_ctruprime_653_length_public_key;
     kem->length_secret_key = OQS_KEM_ctruprime_653_length_secret_key;
     kem->length_ciphertext = OQS_KEM_ctruprime_653_length_ciphertext;
     kem->length_shared_secret = OQS_KEM_ctruprime_653_length_shared_secret;
 
-    printf("2\n");
+    //printf("2\n");
 
     kem->keypair = OQS_KEM_ctruprime_653_keypair;
     kem->encaps = OQS_KEM_ctruprime_653_encaps;
     kem->decaps = OQS_KEM_ctruprime_653_decaps;
 
-    printf("3\n");
+    //printf("3\n");
 
-    printf("[In OQS_KEM_ctruprime_653_new] new ctruprime 653 success,start return!\n");
+    //printf("[In OQS_KEM_ctruprime_653_new] new ctruprime 653 success,start return!\n");
     return kem;
 }
 
