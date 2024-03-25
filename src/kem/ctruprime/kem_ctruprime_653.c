@@ -6,10 +6,10 @@
 功能:将ctruprime653注册到结构体KEM中，并为其提供信息(包括名称、版本、长度等)和指针(密钥生成、封装和解封装)
 */
 OQS_KEM *OQS_KEM_ctruprime_653_new(void) {
-    printf("[In OQS_KEM_ctruprime_653_new] start new ctruprime 653\n");
+    
     OQS_KEM *kem = malloc(sizeof(OQS_KEM));
     if(kem == NULL){
-        printf("[In OQS_KEM_ctruprime_653_new] malloc OQS_KEM failed\n");
+        
         return NULL;
     }
     kem->method_name = OQS_KEM_alg_ctruprime_653;

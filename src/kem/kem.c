@@ -416,7 +416,7 @@ OQS_API OQS_KEM *OQS_KEM_new(const char *method_name) {
 		// HXW
 	} else if (0 == strcasecmp(method_name, OQS_KEM_alg_ctruprime_653)) {
 #ifdef OQS_ENABLE_KEM_ctruprime_653
-		printf("[In kem.c] Try to new ctruprime653\n" );
+		
 		return OQS_KEM_ctruprime_653_new(); //TODO:检查在cmake中的定义是否能够达到正确的效果
 #else
 		return NULL;
